@@ -139,9 +139,7 @@ void main(void) {
                     sleep_count = 0;            //reset sleep counter
                 }else if(debounced_switch == 0xFF){
                     button_released = true;
-                    SLEEP();
-                    
-                    PWM1DCH = BRIGHT;
+                    SLEEP(); // sleep if no lights on and no button has been pushed after debouncing
                 }
             }
         }
