@@ -17,7 +17,7 @@ extern "C" {
 // 'C' source line config statements
 
 // CONFIG
-#pragma config FOSC = EC        // Oscillator Selection bits (EC: CLKIN function enabled)
+#pragma config FOSC = INTOSC        // Oscillator Selection bits (EC: CLKIN function enabled)
 #pragma config BOREN = NSLEEP   // Brown-out Reset Enable (Brown-out Reset enabled while running and disabled in Sleep)
 #pragma config WDTE = NSLEEP    // Watchdog Timer Enable (WDT enabled while running and disabled in Sleep)
 #pragma config PWRTE = OFF      // Power-up Timer Enable bit (PWRT disabled)
