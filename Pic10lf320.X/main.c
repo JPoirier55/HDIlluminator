@@ -5,7 +5,6 @@
  * Created on March 8, 2017, 2:11 PM
  */
 
-
 #include <xc.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -78,7 +77,6 @@ void setup(){
     debounced_switch = 0xFF; // start with it loaded with switching being open
     button_released = true;
     light_on = false;
-    
 }
 
 void main(void) {

@@ -1,25 +1,20 @@
+/*
+ * File:   main.c
+ * Author: JPoirier
+ *
+ * Created on March 15, 2017, 10:45 AM
+ */
 
 #include <pic10lf320.h>
-
-
-
-
 
 #include "globals.h"
 #include "pin_defines.h"
 
 void interrupt isr(void)
 {
-
-
-    // TIMER 2 ISR ==============================================================
-
     if (PIE1bits.TMR2IE && PIR1bits.TMR2IF)
     {
         PIR1bits.TMR2IF = 0;              // clear the interrupt
-        debounced_switch = (debounced_switch << 1) | (0x01 & pb_pin);
-        // assume we are quick enough to increment counter in main
+        debounced_switch = (debounced_switch << 1) | (0x01 & pb_pin); // bit shift every interrupt
     }
-    // END TIMER 2 ISR  ==========================================================
-
 }
