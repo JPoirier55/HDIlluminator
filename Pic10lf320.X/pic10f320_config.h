@@ -5,8 +5,8 @@
  * Created on March 8, 2017, 2:20 PM
  */
 
-#ifndef PI10LF320_CONFIG_H
-#define	PI10LF320_CONFIG_H
+#ifndef PI10F320_CONFIG_H
+#define	PI10F320_CONFIG_H
 
 #ifdef	__cplusplus
 extern "C" {

@@ -1,0 +1,162 @@
+[p LITE_MODE AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 10F320 ]
+[d frameptr 6 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.41\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"13 C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+"46 C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+[v _setup setup `(v  1 e 1 0 ]
+"89
+[v _main main `(v  1 e 1 0 ]
+[s S41 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+]
+"162 C:\Program Files (x86)\Microchip\xc8\v1.41\include\pic10f320.h
+[u S46 . 1 `S41 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES46  1 e 1 @5 ]
+[s S30 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+]
+"198
+[u S34 . 1 `S30 1 . 1 0 ]
+[v _TRISAbits TRISAbits `VES34  1 e 1 @6 ]
+[s S19 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+]
+"260
+[u S23 . 1 `S19 1 . 1 0 ]
+[v _ANSELAbits ANSELAbits `VES23  1 e 1 @8 ]
+[s S187 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"352
+[u S196 . 1 `S187 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES196  1 e 1 @11 ]
+[s S93 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 CLC1IF 1 0 :1:3 
+`uc 1 NCO1IF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"412
+[u S101 . 1 `S93 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES101  1 e 1 @12 ]
+[s S155 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 CLC1IE 1 0 :1:3 
+`uc 1 NCO1IE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"452
+[u S163 . 1 `S155 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES163  1 e 1 @13 ]
+[s S54 . 1 `uc 1 HFIOFS 1 0 :1:0 
+`uc 1 LFIOFR 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 HFIOFR 1 0 :1:3 
+`uc 1 IRCF 1 0 :3:4 
+]
+"590
+[s S60 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 IRCF0 1 0 :1:4 
+`uc 1 IRCF1 1 0 :1:5 
+`uc 1 IRCF2 1 0 :1:6 
+]
+[u S65 . 1 `S54 1 . 1 0 `S60 1 . 1 0 ]
+[v _OSCCONbits OSCCONbits `VES65  1 e 1 @16 ]
+"635
+[v _PR2 PR2 `VEuc  1 e 1 @18 ]
+[s S112 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+"662
+[s S116 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S124 . 1 `S112 1 . 1 0 `S116 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES124  1 e 1 @19 ]
+"890
+[v _PWM2DCL PWM2DCL `VEuc  1 e 1 @23 ]
+"925
+[v _PWM2DCH PWM2DCH `VEuc  1 e 1 @24 ]
+"994
+[v _PWM2CON PWM2CON `VEuc  1 e 1 @25 ]
+[s S140 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM2POL 1 0 :1:4 
+`uc 1 PWM2OUT 1 0 :1:5 
+`uc 1 PWM2OE 1 0 :1:6 
+`uc 1 PWM2EN 1 0 :1:7 
+]
+"1013
+[u S146 . 1 `S140 1 . 1 0 ]
+[v _PWM2CONbits PWM2CONbits `VES146  1 e 1 @25 ]
+[s S174 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+]
+"1119
+[u S179 . 1 `S174 1 . 1 0 ]
+[v _IOCANbits IOCANbits `VES179  1 e 1 @27 ]
+[s S296 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+]
+"1156
+[u S301 . 1 `S296 1 . 1 0 ]
+[v _IOCAFbits IOCAFbits `VES301  1 e 1 @28 ]
+[s S80 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 CLKROE 1 0 :1:6 
+]
+"1493
+[u S83 . 1 `S80 1 . 1 0 ]
+[v _CLKRCONbits CLKRCONbits `VES83  1 e 1 @38 ]
+"15 C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\globals.h
+[v _debounced_switch debounced_switch `uc  1 e 1 0 ]
+"16
+[v _sleep_timer sleep_timer `i  1 e 2 0 ]
+"43 C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+[v _button_released button_released `b  1 e 0 0 ]
+"44
+[v _light_on light_on `b  1 e 0 0 ]
+"89
+[v _main main `(v  1 e 1 0 ]
+{
+"123
+} 0
+"46
+[v _setup setup `(v  1 e 1 0 ]
+{
+"87
+} 0
+"13 C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"25
+} 0

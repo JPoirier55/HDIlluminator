@@ -13,6 +13,7 @@ extern "C" {
 #endif
 
 unsigned char debounced_switch;
+int sleep_timer;
 
 
 #ifdef	__cplusplus

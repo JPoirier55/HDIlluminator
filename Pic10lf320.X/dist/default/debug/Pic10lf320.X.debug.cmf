@@ -1,0 +1,294 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+reset_vec CODE 0 0 0 2 2
+end_init CODE 0 E E 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/default/debug\Pic10lf320.X.debug.obj
+cinit CODE 0 F F 3 2
+text1 CODE 0 3F 3F 20 2
+text2 CODE 0 5F 5F 19 2
+nvBANK0 BANK0 1 48 48 1 1
+maintext CODE 0 12 12 2D 2
+cstackBANK0 BANK0 1 40 40 8 1
+bitbssBANK0 BANK0 1 250 4A 1 1
+intentry CODE 0 4 4 A 2
+bitnvBANK0 BANK0 1 248 49 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 4B-7D 1
+BANK0 4B-7D 1
+CONST 2-3 2
+CONST 78-FF 2
+ENTRY 2-3 2
+ENTRY 78-FF 2
+IDLOC 2000-2003 2
+STACK 4B-7D 1
+CODE 2-3 2
+CODE 78-FF 2
+SFR0 0-3F 1
+STRCODE 2-3 2
+STRCODE 78-FF 2
+STRING 2-3 2
+STRING 78-FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/debug\Pic10lf320.X.debug.obj
+F cinit CODE >370:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+F cinit CODE >373:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+F cinit CODE >384:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+10 cinit CODE >390:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+10 cinit CODE >392:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+11 cinit CODE >393:C:\Users\jpoirier\AppData\Local\Temp\s8vs.
+4 intentry CODE >13:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+5F text2 CODE >13:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+5F text2 CODE >15:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+62 text2 CODE >17:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+63 text2 CODE >18:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+6D text2 CODE >20:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\isr.c
+3F text1 CODE >45:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+3F text1 CODE >47:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+40 text1 CODE >48:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+41 text1 CODE >49:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+42 text1 CODE >51:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+43 text1 CODE >53:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+44 text1 CODE >54:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+45 text1 CODE >56:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+46 text1 CODE >57:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+47 text1 CODE >59:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+4B text1 CODE >61:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+4D text1 CODE >63:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+4E text1 CODE >64:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+4F text1 CODE >66:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+50 text1 CODE >67:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+52 text1 CODE >68:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+53 text1 CODE >70:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+54 text1 CODE >71:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+55 text1 CODE >73:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+56 text1 CODE >74:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+57 text1 CODE >75:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+58 text1 CODE >77:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+5C text1 CODE >78:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+5D text1 CODE >79:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+5E text1 CODE >80:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+12 maintext CODE >82:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+12 maintext CODE >84:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+13 maintext CODE >88:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+14 maintext CODE >89:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+18 maintext CODE >90:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+1C maintext CODE >91:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+1E maintext CODE >92:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+22 maintext CODE >93:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+24 maintext CODE >94:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+25 maintext CODE >95:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+26 maintext CODE >96:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+27 maintext CODE >98:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+28 maintext CODE >99:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+2B maintext CODE >100:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+2C maintext CODE >102:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+2D maintext CODE >103:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+2F maintext CODE >104:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+31 maintext CODE >105:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+32 maintext CODE >106:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+33 maintext CODE >86:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+33 maintext CODE >87:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+34 maintext CODE >88:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+36 maintext CODE >103:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+39 maintext CODE >107:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+3C maintext CODE >108:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+3D maintext CODE >109:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+3E maintext CODE >86:C:\Users\jpoirier\MPLABXProjects\pic_sample.X\git_folder\HDIlluminator\Pic10lf320.X\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 251 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+_PWM2DCH 18 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+_PWM2DCL 17 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+_main 24 0 CODE 0 maintext dist/default/debug\Pic10lf320.X.debug.obj
+btemp 7E 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+start 1C 0 CODE 0 init C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+__size_of_main 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__HbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+intlevel0 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+intlevel1 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+intlevel2 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+intlevel3 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+intlevel4 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+intlevel5 0 0 CODE 0 functab C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+_OSCCONbits 10 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+wtemp0 7E 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Hfunctab 0 0 CODE 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+__LbitnvBANK0 0 0 ABS 0 bitnvBANK0 -
+__Lmaintext 0 0 ABS 0 maintext -
+__LnvBANK0 0 0 ABS 0 nvBANK0 -
+__size_of_setup 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+start_initialization 1E 0 CODE 0 cinit dist/default/debug\Pic10lf320.X.debug.obj
+_TRISAbits 6 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__pcstackBANK0 40 0 BANK0 1 cstackBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+_debounced_switch 48 0 BANK0 1 nvBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+_button_released 248 -1FF BANK0 1 bitnvBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+_light_on 250 -206 BANK0 1 bitbssBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+___int_sp 0 0 STACK 2 stack C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hcinit 24 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__CFG_FOSC$INTOSC 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lcinit 1E 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+_PORTAbits 5 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_WDTE$NSLEEP 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+_INTCONbits B 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1C 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1C 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Ltext 0 0 ABS 0 text -
+__pnvBANK0 48 0 BANK0 1 nvBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_PR2 12 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__S0 2008 0 ABS 0 - -
+__S1 4B 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+_isr BE 0 CODE 0 text2 dist/default/debug\Pic10lf320.X.debug.obj
+__pbitbssBANK0 250 -206 BANK0 1 bitbssBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+saved_w 7E 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__end_of_isr F0 0 CODE 0 text2 dist/default/debug\Pic10lf320.X.debug.obj
+__HnvBANK0 0 0 ABS 0 nvBANK0 -
+__Lintentry 8 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+_PIE1bits D 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__LbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__pmaintext 24 0 CODE 0 maintext dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_BORV$LO 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+_PWM2CONbits 19 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+stackhi 0 0 ABS 0 - C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+stacklo 0 0 ABS 0 - C:\Users\jpoirier\AppData\Local\Temp\s8vs.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+_PIR1bits C 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__Lend_init 1C 0 CODE 0 end_init -
+__CFG_LVP$ON 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 20 0 CODE 0 cinit dist/default/debug\Pic10lf320.X.debug.obj
+__Hintentry 1C 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+__Hreset_vec 4 0 CODE 0 reset_vec -
+__ptext1 7E 0 CODE 0 text1 dist/default/debug\Pic10lf320.X.debug.obj
+__ptext2 BE 0 CODE 0 text2 dist/default/debug\Pic10lf320.X.debug.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__HbitbssBANK0 0 0 ABS 0 bitbssBANK0 -
+__end_of__initialization 20 0 CODE 0 cinit dist/default/debug\Pic10lf320.X.debug.obj
+__Lfunctab 0 0 CODE 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 0 0 COMMON 1 cstackCOMMON dist/default/debug\Pic10lf320.X.debug.obj
+__Hend_init 1E 0 CODE 0 end_init -
+__end_of_main 7E 0 CODE 0 maintext dist/default/debug\Pic10lf320.X.debug.obj
+__end_of_setup BE 0 CODE 0 text1 dist/default/debug\Pic10lf320.X.debug.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/default/debug\Pic10lf320.X.debug.obj
+_setup 7E 0 CODE 0 text1 dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_LPBOR$ON 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__pintentry 8 0 CODE 0 intentry dist/default/debug\Pic10lf320.X.debug.obj
+__pbitnvBANK0 248 -1FF BANK0 1 bitnvBANK0 dist/default/debug\Pic10lf320.X.debug.obj
+__size_of_isr 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__initialization 1E 0 CODE 0 cinit dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_BOREN$NSLEEP 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+_T2CONbits 13 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+_ANSELAbits 8 0 ABS 0 - dist/default/debug\Pic10lf320.X.debug.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackBANK0 1 40 40 B 1
+intentry 0 4 8 74 2
+reset_vec 0 0 0 2 2
+config 0 2007 400E 1 2
